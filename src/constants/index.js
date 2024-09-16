@@ -11,14 +11,15 @@ import {
     redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    rolex,
+    vuejs,
+    python,
+    gitlab,
+    productec,
+    bluescreenit,
     carrent,
     jobit,
     tripguide,
@@ -42,19 +43,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Front-End Engineer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Specialist",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Fullstack Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "UX Enthusiast",
       icon: creator,
     },
   ];
@@ -81,8 +82,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Vue JS",
+      icon: vuejs,
     },
     {
       name: "Tailwind CSS",
@@ -93,16 +94,16 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
     {
       name: "git",
       icon: git,
+    },
+    {
+      name: "gitlab",
+      icon: gitlab,
     },
     {
       name: "figma",
@@ -112,61 +113,49 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "python",
+      icon: python,
+    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Front-end Engineer",
+      company_name: "Rolex",
+      icon: rolex,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2020 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a CMDB web app in React 18 and Tailwind, improving network security and threat detection for Rolex’s IT teams.",
+        "Developed fullstack web applications using Vue.js 3, Quasar, and Pinia, managing IT events and lifecycles for 80+ IT personnel.",
+        "Created an ETL process in Python, enhancing CMDB data accuracy for IT and Security Teams.",
+        "Served as Scrum Master, facilitating agile practices and fostering team collaboration.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Front-End Administrator",
+      company_name: "BluescreenIT (UK)",
+      icon: bluescreenit,
+      iconBg: "#008bd2",
+      date: "Nov 2016 - Feb 2017",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+        "Managed and updated the company website using Joomla, improving user experience and functionality.",
+        "Proposed and implemented strategic website updates to align with company goals.",
+        ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "IT Specialist",
+      company_name: "Productec",
+      icon: productec,
+      iconBg: "#59728d",
+      date: "Jan 2015 - Dec 2016",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed an internal web app to track CNC part progress, boosting transparency and operational efficiency.",
+        "Supervised and trained an intern, ensuring smooth workflow integration.",
+        "Maintained and updated the company website with WordPress, adding new posts regularly.",
       ],
-    },
+    }
   ];
   
   const testimonials = [

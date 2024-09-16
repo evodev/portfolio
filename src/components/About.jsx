@@ -38,7 +38,7 @@ const About = () => {
 
       <motion.p variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et quis suscipit maxime cum, dolorem sunt voluptatum iure natus. Eos, debitis nostrum asperiores provident aliquam quam sequi. Adipisci, optio repudiandae!
+        I'm a Software Engineer with over 5 years of experience, specializing in JavaScript, TypeScript, and frameworks like React and VueJS . I’m passionate about building efficient, scalable, and user-friendly web applications. My focus is on delivering innovative solutions while ensuring a smooth user experience and strong communication.
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
