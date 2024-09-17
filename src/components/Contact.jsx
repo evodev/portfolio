@@ -21,36 +21,43 @@ const Contact = () => {
     setForm({ ...form, [name]: value})
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
-    emailjs.send('service_xx', 'template_xx',
-      {from_name: form.name,
-        to_name: 'Marc-Antoine',
-        from_email: form.email,
-        to_email: 'marcantoine.sudan@gmail.com',
-        message: form.message
-      },
-      'public'
-     )
-     .then(() => {
-      setLoading(false)
-      alert('Thank you. I will get back to you as soon as possible.')
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    },
+    // Intégration reCAPTCHA
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LeLNEcqAAAAANJgVemF_fuMu3RtbcwGatwtq1dx', { action: 'submit' })
+
+      // Envoie le formulaire si reCAPTCHA est validé
+      emailjs.send('service_db6i2lo', 'template_02bi8u5',
+        {
+          from_name: form.name,
+          to_name: 'Marc-Antoine',
+          from_email: form.email,
+          to_email: 'marcantoine.sudan@gmail.com',
+          message: form.message,
+          'g-recaptcha-response': token // Ajoute le token reCAPTCHA à l'envoi
+        },
+        'mN8RqK-NxofZ4q0YC'
+      )
+      .then(() => {
+        setLoading(false)
+        alert('Thank you. I will get back to you as soon as possible.')
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      },
       (error) => {
         setLoading(false)
         console.log(error)
-        alert('Somethin went wront.')
-      }
-    )
+        alert('Something went wrong.')
+      })
+    })
   }
-
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
