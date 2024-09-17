@@ -1,9 +1,27 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { LittleComputersCanvas } from './canvas'
+import { useState, useEffect  } from 'react'
 
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)")
+    setIsMobile(mediaQuery.matches)
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -16,7 +34,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I build dynamic websites <br className='sm:block hidden' /> and user-focused web applications</p>
         </div>
       </div>
-      <ComputersCanvas />
+      {isMobile ? <LittleComputersCanvas /> : <ComputersCanvas />}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
