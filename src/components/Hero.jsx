@@ -34,8 +34,8 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I build dynamic websites <br className='sm:block hidden' /> and user-focused web applications</p>
         </div>
       </div>
-      {isMobile ? <LittleComputersCanvas /> : <ComputersCanvas />}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {isMobile ? <LittleComputersCanvas/> : <ComputersCanvas />}
+      <div className='absolute xs:bottom-10 bottom-16 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.dev
