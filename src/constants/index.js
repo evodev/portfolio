@@ -98,23 +98,23 @@ import {
       icon: threejs,
     },
     {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {
-      name: "gitlab",
+      name: "Gitlab",
       icon: gitlab,
     },
     {
-      name: "figma",
+      name: "Figma",
       icon: figma,
     },
     {
-      name: "docker",
+      name: "Docker",
       icon: docker,
     },
     {
-      name: "python",
+      name: "Python",
       icon: python,
     },
   ];
