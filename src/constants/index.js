@@ -127,7 +127,7 @@ import {
       iconBg: "#E6DEDD",
       date: "June 2020 - Present",
       points: [
-        "Built a CMDB web app in React 18 and Tailwind, improving network security and threat detection for Rolex’s IT teams.",
+        "Built a CMDB web app in React and Tailwind, improving network security and threat detection for Rolex’s IT teams.",
         "Developed fullstack web applications using Vue.js 3, Quasar, and Pinia, managing IT events and lifecycles for 80+ IT personnel.",
         "Created an ETL process in Python, enhancing CMDB data accuracy for IT and Security Teams.",
         "Served as Scrum Master, facilitating agile practices and fostering team collaboration.",
